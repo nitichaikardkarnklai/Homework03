@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+}
+
+/*nav Section*/
+nav {
+    display: flex;
+    min-height: 30px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    font-size: 0.8em;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+.left i {
+    color: green;
+    padding-right: 6px;
+    font-size: 1.4em;
+}
+.mid {
+    display: flex;
+    width: 30%;
+}
+.mid a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 700;
+    color: black;
+}
+.right {
+    display: flex;
+    width: 24%;
+    justify-content: center;
+}
+.right a {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 700;
+        color: black;
+}
+.shopping_icon {
+    position: relative;
+}
+.badge {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    right: 0px;
+    top: -4px;
+}
+a {
+    text-decoration: none;
+}
+
+/*Page Section*/
+.page {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+/*Shopping Section*/
+.shopping {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Card Section*/
+.menu {
+    min-height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.card {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    min-height: 320px;
+    width: 520px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.bin {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bin i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.subcard {
+    min-height: 240px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: lightskyblue;
+    padding: 24px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+.subcard > * {
+    margin-top: 16px;
+}
+.subcard2 {
+    min-height: 240px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: orange;
+    padding: 24px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+.subcard2 > * {
+    margin-top: 16px;
+}
+.subcard_icon i {
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.details {
+    margin-left: 8px;
+}
+.choose {
+    display: flex;
+}
+.container, .choose form {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+.circle1 {
+    width: 16px;
+    height: 16px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.circle2 {
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.price{
+    margin-top: 12px;
+}
+
+/*Buy Section*/
+.buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 560px;
+    width: 45%;
+    background-color: rgb(240, 240, 240);
+    border: 4px solid rgb(224, 224, 224);
+    border-radius: 16px;
+    margin-top: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 1.4em;
+}
+.buy > * {
+    padding-bottom: 48px;
+}
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+.promotion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promotion .coupon {
+    color: lightseagreen;
+}
+.promotion input[type=text] {
+    padding-left: 8px;
+    padding-right: 100px;
+    padding-block: 8px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+}
+.promotion button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-block: 8px;
+    color: lightseagreen;
+    background-color: none;
+    border: 4px solid lightseagreen;
+    border-radius: 16px;
+}
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid lightgrey;
+    padding-top: 16px;
+}
+.final_price {
+    color: lightseagreen;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.checkout button{
+    width: 100%;
+    height: 48px;
+    color: black;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
